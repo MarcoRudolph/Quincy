@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.marco.quincy.MainActivity">
+
+    <!-- Titel -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.7"
+            android:layout_height="60dp"
+            android:background="@color/blau">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="0.3"
+            android:background="@color/dunkelblau">
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Content Mitte -->
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:id="@+id/main_content"/>
+
+
+<!-- Buttons -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <!-- PatientButton -->
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:background="@drawable/buttonborder">
+            <TextView android:id="@+id/btnPatientIconText"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:textSize="14sp"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_gravity="center"/>
+            <TextView android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:gravity="left|center_vertical"
+                android:textSize="14sp"
+                android:text="@string/caption_btnpatient"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grau3"
+    android:orientation="vertical">
+
+    <!-- Orange Infoleiste -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:minHeight="60dp"
+        android:background="@color/orange">
+        <TextView android:id="@+id/btnPatientIconText"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:textSize="14sp"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <!-- Kartei Listview -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <!-- Buttons Links an der Kartei -->
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="300dp"
+            android:background="@color/blau">
+            <Button android:id="@+id/btnMp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="MP"
+                android:textSize="12dp"
+                android:textColor="@android:color/white"
+                android:textAlignment="center"
+                android:paddingTop="12dp"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_horizontal"
+                android:background="@drawable/buttonborderwhite"
+                />
+        </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:id="@+id/kartei_listview"></ListView>
+    </LinearLayout>
+</LinearLayout>
