@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="schriftarten_captions">
+        <item>Arial</item>
+        <item>Comic Sans</item>
+        <item>Roman</item>
+    </string-array>
+    <string-array name="schriftarten_values">
+        <item>Arial</item>
+        <item>Comic Sans</item>
+        <item>Roman</item>
+    </string-array>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<ListPreference android:key="pref_textart"
+    android:title="Schrift fett"
+    android:summary="Die Buchstaben werden größer"
+    android:entries="@array/schriftarten_captions"
+    android:entryValues="@array/schriftarten_values"
+    android:defaultValue="Arial"/>
+</PreferenceScreen>
